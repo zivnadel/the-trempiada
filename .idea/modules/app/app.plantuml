@@ -1,0 +1,200 @@
+@startuml
+
+title __THETREMPIADA.APP's Class Diagram__\n
+
+  namespace com.example.thetrempiada {
+    class com.example.thetrempiada.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    class com.example.thetrempiada.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      class com.example.thetrempiada.data.BaseActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      class com.example.thetrempiada.data.PathStorageHelper {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      class com.example.thetrempiada.data.User {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      class com.example.thetrempiada.data.UserHelper {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      namespace directionData {
+        class com.example.thetrempiada.data.directionData.LatLng {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace data {
+      namespace directionData {
+        class com.example.thetrempiada.data.directionData.StorageHelper {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace enums {
+      enum Gender {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace enums {
+      enum UserType {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace login {
+      class com.example.thetrempiada.login.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace login {
+      class com.example.thetrempiada.login.SignUpActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace receivers {
+      class com.example.thetrempiada.receivers.GpsLocationReceiver {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace services {
+      class com.example.thetrempiada.services.Sample {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.about {
+      class com.example.thetrempiada.ui.about.AboutFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.contact {
+      class com.example.thetrempiada.ui.contact.ContactFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.exit {
+      class com.example.thetrempiada.ui.exit.ExitFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.home {
+      class com.example.thetrempiada.ui.home.HomeFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.profile {
+      class com.example.thetrempiada.ui.profile.ProfileFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.settings {
+      class com.example.thetrempiada.ui.settings.ProfileSettingsActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.thetrempiada {
+    namespace ui.settings {
+      class com.example.thetrempiada.ui.settings.SettingsActivity {
+      }
+    }
+  }
+  
+
+  com.example.thetrempiada.MainActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.thetrempiada.MainActivity -up-|> com.example.thetrempiada.data.BaseActivity
+  com.example.thetrempiada.data.BaseActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.thetrempiada.data.BaseActivity o-- com.example.thetrempiada.data.BaseActivity.OnTouchOutsideViewListener : mOnTouchOutsideViewListener
+  com.example.thetrempiada.data.User o-- com.example.thetrempiada.data.directionData.LatLng : _currentLocation
+  com.example.thetrempiada.data.User o-- com.example.thetrempiada.enums.Gender : _gender
+  com.example.thetrempiada.data.User o-- com.example.thetrempiada.enums.UserType : _userType
+  com.example.thetrempiada.login.LoginActivity -up-|> com.example.thetrempiada.data.BaseActivity
+  com.example.thetrempiada.login.SignUpActivity -up-|> com.example.thetrempiada.data.BaseActivity
+  com.example.thetrempiada.receivers.GpsLocationReceiver -up-|> android.content.BroadcastReceiver
+  com.example.thetrempiada.services.Sample -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.thetrempiada.ui.about.AboutFragment -up-|> androidx.fragment.app.Fragment
+  com.example.thetrempiada.ui.contact.ContactFragment -up-|> androidx.fragment.app.Fragment
+  com.example.thetrempiada.ui.exit.ExitFragment -up-|> androidx.fragment.app.Fragment
+  com.example.thetrempiada.ui.home.HomeFragment -up-|> androidx.fragment.app.Fragment
+  com.example.thetrempiada.ui.profile.ProfileFragment -up-|> androidx.fragment.app.Fragment
+  com.example.thetrempiada.ui.settings.ProfileSettingsActivity -up-|> com.example.thetrempiada.data.BaseActivity
+  com.example.thetrempiada.ui.settings.SettingsActivity -up-|> com.example.thetrempiada.data.BaseActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

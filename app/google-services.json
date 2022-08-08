@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141914403718",
+    "project_id": "thetrempiada-5e41a",
+    "storage_bucket": "thetrempiada-5e41a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141914403718:android:7983c604498ad0ec9c7207",
+        "android_client_info": {
+          "package_name": "com.example.thetrempiada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141914403718-3ds111kb1lrh5oikltvcrge1hh4cii6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeQC4-N1AXyJ07qbI70OnbejQrG-pA9jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141914403718-3ds111kb1lrh5oikltvcrge1hh4cii6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

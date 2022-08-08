@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.thetrempiada.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.thetrempiada.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.thetrempiada.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.thetrempiada.ui.settings.SettingsActivity"
+        android:label="Settings"
+        tools:layout="@layout/activity_settings"/>
+
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.example.thetrempiada.ui.exit.ExitFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_exit"/>
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.thetrempiada.ui.contact.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact"/>
+
+
+</navigation>

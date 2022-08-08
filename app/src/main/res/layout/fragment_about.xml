@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/dialog_rounded_layout"
+    android:layout_gravity="center"
+    android:id="@+id/about_fragment"
+    tools:context=".ui.about.AboutFragment">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_about"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="16dp"
+            android:contentDescription="ic_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="TheTrempiada v0.1\n"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2021 Ziv Nadel. All rights reserved. "
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="zywn1414@gmail.com "
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+</FrameLayout>

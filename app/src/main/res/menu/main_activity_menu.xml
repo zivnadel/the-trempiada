@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_dismiss_route"
+        android:icon="@drawable/ic_back"
+        android:title="Clear map"
+        android:visible="false"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/action_new_drive"
+        android:icon="@drawable/ic_car"
+        android:title="Create new drive"
+        android:visible="false"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/action_take_tremp"
+        android:icon="@drawable/ic_hand"
+        android:title="Ask for tremp"
+        android:visible="false"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+
+</menu>
